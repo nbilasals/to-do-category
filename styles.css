@@ -1,0 +1,180 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #b6bddd 0%, #d6acff 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Task Counter */
+.task-counter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-counter span {
+    font-weight: bold;
+    color: #333;
+}
+
+.task-counter strong {
+    color: #007BFF;
+}
+
+/* Input Form */
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d2b2b2;
+    border-radius: 5px 0 0 5px;
+}
+
+#categorySelect {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+}
+
+#addBtn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-item.work {
+    background-color: #f0f0f0;
+}
+
+.task-item.shopping {
+    background-color: #f0f0f0;
+}
+
+.task-item.personal {
+    background-color: #f0f0f0;
+}
+
+.task-item span {
+    flex: 1;
+    color: #333;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-text {
+    flex: 1;
+    color: #333;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.category-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+}
+
+.category-badge.work {
+    background-color: #FFC107;
+}
+
+.category-badge.shopping {
+    background-color: #FF5722;
+}
+
+.category-badge.personal {
+    background-color: #4CAF50;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.clear-btn {
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    #taskInput {
+        margin-bottom: 10px;
+    }
+}
